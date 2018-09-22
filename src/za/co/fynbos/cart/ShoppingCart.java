@@ -23,8 +23,8 @@ public class ShoppingCart {
 			this.items.remove(item);
 		}
 		
-		public int calculateTotal(){
-			int sum = 0;
+		public double calculateTotal(){
+			double sum = 0;
 			for(Item item : items){
 				sum += item.getPrice();
 			}
@@ -32,7 +32,7 @@ public class ShoppingCart {
 		}
 		
 		public void pay(PaymentStrategy paymentMethod){
-			int amount = calculateTotal();
+			double amount = calculateTotal();
 			paymentMethod.pay(amount);
 		}
 }

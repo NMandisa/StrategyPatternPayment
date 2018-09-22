@@ -13,7 +13,7 @@ public class PaypalStrategy implements PaymentStrategy {
 	}
 	
 	@Override
-	public void pay(int amount) {
+	public void pay(double amount) {
 		System.out.println(amount + " paid using Paypal.");
 		
 	}

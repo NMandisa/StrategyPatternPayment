@@ -1,5 +1,5 @@
 package za.co.fynbos.strategy;
 
 public interface PaymentStrategy {
-	public void pay(int amount);
+	public void pay(double amount);
 }

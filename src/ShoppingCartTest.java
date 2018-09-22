@@ -8,8 +8,8 @@ public class ShoppingCartTest {
 	public static void main(String[] args) {
 		ShoppingCart cart = new ShoppingCart();
 
-		Item item1 = new Item("1234", 20);
-		Item item2 = new Item("5678", 70);
+		Item item1 = new Item("23245","Soap",3,20.99);
+		Item item2 = new Item("5678", 70.30);
 
 		cart.addItem(item1);
 		cart.addItem(item2);
